@@ -1,0 +1,5 @@
+<form action="" method="GET">
+    <input type="text" name="id" autofocus />
+    <input type="submit" value="Get Employees"/>
+</form>
+<a href="/api/employees">Employees JSON</a>

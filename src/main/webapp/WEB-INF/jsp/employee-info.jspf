@@ -1,0 +1,33 @@
+<tr>
+    <td>
+        <c:out value="${employee.id}"/>
+    </td>
+    <td>
+        <c:out value="${employee.name}"/>
+    </td>
+    <td>
+        <c:out value="${employee.contractTypeName}"/>
+    </td>
+    <td>
+        <c:out value="${employee.roleId}"/>
+    </td>
+    <td>
+        <c:out value="${employee.roleName}"/>
+    </td>
+    <td>
+        <c:out value="${employee.roleDescription}"/>
+    </td>
+    <td>
+        <fmt:formatNumber value = "${employee.hourlySalary}" type = "currency"/>
+    </td>
+    <td>
+        <fmt:formatNumber value = "${employee.monthlySalary}" type = "currency"/>
+    </td>
+    <td>
+        <fmt:formatNumber value = "${employee.annualSalary}" type = "currency"/>
+    </td>
+    <td>
+        <c:set var="jsonURL" value="/api/employees/${employee.id}"/>
+        <a href="${jsonURL}">Employee JSON</a>
+    </td>
+</tr>
